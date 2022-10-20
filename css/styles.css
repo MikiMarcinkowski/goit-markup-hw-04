@@ -2,6 +2,7 @@
   --primary-color: rgba(117, 117, 117, 1);
   --secondary-color: rgba(255, 255, 255, 1);
   --semi-white-color: rgba(255, 255, 255, 0.6);
+  --dark-grey-color: rgba(255, 255, 255, 0.1);
   --primary-black: rgba(33, 33, 33, 1);
   --blue-color: rgba(33, 150, 243, 1);
   --main-button-color: rgba(245, 244, 250, 1);
@@ -9,6 +10,7 @@
   --header-background-color: rgba(236, 236, 236, 1);
   --dark-color: rgba(47, 48, 58, 1);
   --grey-color: rgba(238, 238, 238, 1);
+  --secondary-grey: rgba(175, 177, 184, 1);
 }
 
 body {
@@ -55,10 +57,7 @@ body {
   line-height: 1.14;
   text-decoration: none;
   letter-spacing: 0.02em;
-
 }
-
-
 
 .header-contact:hover,
 .header-contact:focus {
@@ -259,7 +258,6 @@ ul {
 
 .navigation-description {
   margin-left: 93px;
-  /* display: flex; */
 }
 .main-menu {
   display: flex;
@@ -271,9 +269,9 @@ ul {
 .contact {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 30px;
   padding: 0;
-  margin-left: 356px;
+  margin-left: 345px;
 }
 
 .descryption {
@@ -329,6 +327,12 @@ h2 {
   margin: 0;
 }
 
+.section1-style {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .section2-style {
   display: flex;
   flex-direction: column;
@@ -348,20 +352,21 @@ h2 {
 
 .section3-style {
   margin: 0;
+  
   display: flex;
   flex-direction: column;
   gap: 50px;
   text-align: center;
   align-items: center;
+  background-color: var(--main-button-color);
+  
 }
 
 .team-item {
   margin: 0;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
-  0 1px 1px 0 rgba(0, 0, 0, 0.14), 
-  0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
-
 }
 
 .team {
@@ -455,39 +460,97 @@ h2 {
   gap: 20px;
 }
 
-
 .phone-icon {
-  
-  fill: blue;
-  margin-right: 10px;
-  overflow: visible;
-  background-color: red;
-  color: var(--blue-color);
-  --color2: var(--blue-color)
-  --color1: var(--blue-color)
-  
+  margin-left: 10px;
 
+  /* fill: blue; */
+
+  /* color: var(--blue-color);
+  --color2: var(--blue-color)
+  --color1: var(--blue-color) */
 }
 
-.customers{
-  padding-top: 0;
-  display: flex;
+.customers {
+    display: flex;
   flex-direction: column;
-  gap:50px;
+  gap: 50px;
   text-align: center;
   align-items: center;
 }
-.client-logo-description{
+.client-logo-description {
   display: flex;
   flex-direction: row;
   gap: 30px;
-
 }
-.client-logo {
+.client-logo-shield {
+  margin: 0;
+
+  width: 170px;
+  height: 92px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1px 1px var(--secondary-grey);
+
+  border-radius: 4px;
+}
+
+.p-icons {
   margin: 0;
   display: flex;
   flex-direction: row;
-  border: 1px solid inset; 
+  gap: 30px;
+}
+
+.p-icon {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-button-color);
   border-radius: 4px;
-  border-color: rgba(175,177,184,1);
+}
+
+.footer-social-links {
+  margin-left: 70px;
+}
+
+.footer-social-title {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: var(--secondary-color)
+
+}
+
+.footer-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: ;
+
+}
+
+.social-shield {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--dark-grey-color);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+}
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  --color4:var(--secondary-color))
+
+}
+
+.social-shield:hover,
+.social-shield:focus {
+  background-color: var(--blue-color);
 }
