@@ -9,6 +9,7 @@
   --secondary-black: rgba(0, 0, 0, 1);
   --header-background-color: rgba(236, 236, 236, 1);
   --dark-color: rgba(47, 48, 58, 1);
+  --second-dark: rgba(47, 48, 58, 0.4);
   --grey-color: rgba(238, 238, 238, 1);
   --secondary-grey: rgba(175, 177, 184, 1);
 }
@@ -62,6 +63,7 @@ body {
 .header-contact:hover,
 .header-contact:focus {
   color: var(--blue-color);
+  stroke: var(--blue-color);
 }
 
 .footer-style {
@@ -107,7 +109,8 @@ body {
 }
 
 .descryption {
-  background-color: var(--dark-color);
+  /* background-color: var(--dark-color), */
+  /* var(--second-dark); */
 }
 
 .header-logo {
@@ -286,7 +289,8 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   gap: 30px;
-  background-image: url(../images/background\ main-button.jpg);
+  background-image: url(../images/background-main-button.jpg);
+  background-color: var(--second-dark);
 }
 .main-header-title {
   margin: 0;
@@ -360,6 +364,8 @@ h2 {
   align-items: center;
   background-color: var(--main-button-color);
   
+  
+  
 }
 
 .team-item {
@@ -367,6 +373,7 @@ h2 {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--secondary-color);
 }
 
 .team {
@@ -460,8 +467,13 @@ h2 {
   gap: 20px;
 }
 
+.envelope-icon {
+  margin-right: 10px;
+}
 .phone-icon {
-  margin-left: 10px;
+  margin-right: 10px;
+  
+  /* margin-left: 10px; */
 
   /* fill: blue; */
 
@@ -542,6 +554,7 @@ h2 {
   align-items: center;
 
 }
+
 .social-icon {
   display: flex;
   flex-direction: row;
@@ -550,7 +563,31 @@ h2 {
 
 }
 
-.social-shield:hover,
-.social-shield:focus {
-  background-color: var(--blue-color);
+.team-social-icon {
+ 
+ margin:0;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--secondary-color);
+  justify-content: center;
+  align-items: center;
+  --color4:var(--secondary-grey)
+  
+}
+
+.team-social {
+ 
+  margin-top: 6px;
+  /* margin-top:6px + gap:10px z powyższego=16px */
+ justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+
+
+.tem-social-item {
+  
 }
