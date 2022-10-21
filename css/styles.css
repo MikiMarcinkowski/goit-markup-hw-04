@@ -575,9 +575,18 @@ h2 {
   background-color: var(--secondary-color);
   justify-content: center;
   align-items: center;
-  --color4:var(--secondary-grey)
+  --color4:var(--secondary-grey);
+
   
 }
+
+.team-social-icon:hover,
+.team-social-icon:focus {
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  --color4:var(--secondary-color)
+  
+} 
 
 .team-social {
  
